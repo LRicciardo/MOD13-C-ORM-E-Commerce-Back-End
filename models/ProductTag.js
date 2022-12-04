@@ -14,17 +14,29 @@ ProductTag.init(
       autoIncrement: true,
     },
     product_id: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      uniqueFlag: false,
+      references: {
+        model: 'product',
+        key: 'id',
+        unique: false,
+      },
     },
     tag_id: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      uniqueFlag: false,
+      references: {
+        model: 'tag',
+        key: 'id',
+        unique: false,
+      },
     },
   },
   {
     sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
+    //   moved to be globally defined (connection.js)
     modelName: 'product_tag',
   }
 );

@@ -13,16 +13,14 @@ Category.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    category_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
   },
   {
     sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
+    //   moved to be globally defined (connection.js)
     modelName: 'category',
   }
 );

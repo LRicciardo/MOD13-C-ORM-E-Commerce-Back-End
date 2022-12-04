@@ -13,16 +13,14 @@ Tag.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    tag_name: {
       type: DataTypes.STRING,
-      // allowNull: false,
+      allowNull: false,
     },
   },
   {
     sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
+    //   moved to be globally defined (connection.js)
     modelName: 'tag',
   }
 );

@@ -28,7 +28,7 @@ Product.init(
       }
     },
     stock: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.INTEGER.UNSIGNED,
       allowNull: false,
       defaultValue: 10,
       validate: {
@@ -37,6 +37,7 @@ Product.init(
     },
     category_id: {
       type: DataTypes.INTEGER,
+      references: { model: "category", key: "id" },
       allowNull: false,
       validate: {
         isNumeric: true,
@@ -45,9 +46,7 @@ Product.init(
   },
   {
     sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
+    //   moved to be globally defined (connection.js)
     modelName: 'product',
   }
 );

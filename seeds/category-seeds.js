@@ -18,6 +18,8 @@ const categoryData = [
   },
 ];
 
+// seeds (loads) the Category Table
+// This will not throw an error, all instances will be created
 const seedCategories = () => Category.bulkCreate(categoryData);
 
 module.exports = seedCategories;
