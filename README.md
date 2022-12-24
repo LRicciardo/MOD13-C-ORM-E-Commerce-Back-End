@@ -11,7 +11,6 @@ Creates the CRUD processes for and Internet retail produce database management a
   
 - [User Story](#userstory)
 - [Acceptance Criteria](#acceptance-criteria)
-- [Bonus](#bonus)
 - [Visual Documentation](#visual-documentation)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -45,27 +44,32 @@ WHEN I test API POST, PUT, and DELETE routes in Insomnia
 THEN I am able to successfully create, update, and delete data in my database
 ```
 
-
-## Bonus
-
-Some additional functionality:
-
-```md
-Adding later
-```
-
 ## Visual Documentation
 
-The following video shows the application being used from the command line:
+The following video shows the application being used from Insomnia app:
 
-[![A video shows the command-line employee management application with a play button overlaying the view.](./assets/images/12-sql-homework-video-thumbnail.png)](https://clipchamp.com/watch/9hVxhFfRJO9)
+DEMO video 1: The GET functions for Category, Product, and Tag tables.
+
+[![A DEMO video 1: The GET functions for Category, Product, and Tag tables.](./assets/images/13-orm-homework-demo-01-sm.gif)](https://drive.google.com/file/d/1-ChrH9NOEWzQyPIfhW-zl0HFe7Zm80KC/view?usp=share_link)
+
+***
+
+A DEMO video 2: The GET by Id functions for Category, Product, and Tag tables.
+
+[![A DEMO video 2: The GET by Id functions for Category, Product, and Tag tables.](./assets/images/13-orm-homework-demo-01-sm.gif)](https://drive.google.com/file/d/1dmQe1YpSUbcl8dGH-m9CDf4-FJksNojM/view?usp=share_link)
+
+***
+
+A DEMO video 3: The POST, PUT and DELETE functions for Category, Product, and Tag tables.
+
+[![A DEMO video 3: The POST, PUT and DELETE functions for Category, Product, and Tag tables.](./assets/images/13-orm-homework-demo-01-sm.gif)](https://drive.google.com/file/d/1BXKKZZqOBH0nvKGfsKHHius-8LXPyVN9/view?usp=share_link)
 
 
 ## Visual Database Schema
 
-The following is a visual representation of the personnel_db database schema.
+The following is a visual representation of the ecommerce_db database schema.
 
-![database schema](./assets/images/MOD12-C-EMPLOYEE-TRACKER.png)
+![database schema](./assets/images/MOD13-C-ORM-E-Commerce-Back-End-sm.png)
 
 ## Installation
 
@@ -96,7 +100,7 @@ This application is using the The MIT License License. Click on the badge  [![Li
 
 ## Features
 
-Modular routes, MySQL2, inquirer@8.2.4, console.table
+
 
 ## How to Contribute
 
